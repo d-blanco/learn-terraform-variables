@@ -12,6 +12,11 @@ terraform {/*
   }
 }
 
+module "terraform-aws-s3-bucket-db" {
+  source  = "app.terraform.io/policy-as-code-training/terraform-aws-s3-bucket-db/aws"
+  version = "1.2.0"
+  bucket_name="asfsadfdsgashakkkkkkkkkkkkk"
+}
 
 provider "aws" {
   region  = "us-west-1"
