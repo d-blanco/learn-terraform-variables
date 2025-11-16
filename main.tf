@@ -8,16 +8,10 @@ terraform {/*
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.0"
     }
   }
 }
 
-module "aws-s3-static-website-bucket-db" {
-  source  = "app.terraform.io/policy-as-code-training/aws-s3-static-website-bucket-db/aws"
-  version = "1.0.0"
-  bucket_name = "asfasfasgljaslgjasjgashhh"
-}
 
 provider "aws" {
   region  = "us-west-1"
